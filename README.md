@@ -52,7 +52,7 @@ env:
 
 ...
 
-uses: prosyslab/dude-action@v1.0.4
+uses: prosyslab/dude-action@v1.1
 with:
   issue_num: ${{ github.event.issue.number }}
   issue_contents: ${{ github.event.issue.body }}
