@@ -1,4 +1,4 @@
-name: 'Dude'
+name: 'Dude: Duplication Detector'
 description: 'Scan every existing issue and inform the issuer if any duplication detected'
 branding:
   icon: 'alert-circle'
