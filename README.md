@@ -44,7 +44,15 @@ If it is not specified, then it will be 0.20.
 If any possible duplication is deteced, it will contains the issue number of it.
 Otherwise, it will be -1.
 
-## Example usage
+## Additional Information
+For dude to act properly, you should make sure setting action's permission well at the repository's settings.  
+1. Go to `Settings` of your repository.
+2. At the `Code and automation` tab, click `Actions/General`.
+3. At the `Workflow permission` tab, check `Read and write permission`.
+
+Without this, our action cannot leave a comment even if it detects duplications.
+
+## Example Usage
 ```
 env:
   rapid_key: ${{ secrets.RAPID_KEY }}
@@ -62,9 +70,9 @@ with:
   threshold: 0.2  # default: 0.2
 ```
 
-## Plans for updates
+## Plans for Updates
 
-- There will be several convenience functions we are currently planning to supports:
+- There are several convenience functions we are currently planning to supports:
   - Using tags, include & exclude some issues from scanning.
   - Set default threshold value by inital scanning.
   - Provide several options to scan & return.
