@@ -36,3 +36,4 @@ runs:
     - ${{ inputs.repository_path_name }}
     - ${{ inputs.rapid_key }}
     - ${{ inputs.repo_key }}
+    - ${{ inputs.threshold }}
